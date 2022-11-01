@@ -14,6 +14,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## Video
 
+[![Watch the video]('./video.webm')]('./video.webm')
+
 [![Video file]          
 (./video.webm)] // Thumbnail
 (./video.webm "Video file")   
