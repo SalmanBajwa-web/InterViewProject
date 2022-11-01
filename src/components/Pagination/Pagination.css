@@ -1,0 +1,20 @@
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+.pagination .btn{
+    padding: 5px 10px;
+    border-radius: 5px;
+    color:#fff;
+    outline: none;
+    border:none;
+    background-color: #ccc;
+    margin-left: 10px;
+
+}
+.pagination .pageActive{
+    background-color: dodgerblue;
+}

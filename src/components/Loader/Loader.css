@@ -1,0 +1,36 @@
+.loader{
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
+    padding: 5px;
+    border-radius: 10px;
+    width:200px;
+    height: 150px;
+    overflow: hidden; 
+    margin-left: 10px;
+    margin-top: 10px;
+    padding:10px;
+    animation: hide 0.3s linear infinite alternate;
+}
+.loader .imgBox{
+    width:100%;
+    height: 90px;
+    background: #ccc;
+    border-radius: 5px;
+}
+.loader .textBox{
+    width:50%;
+    height: 10px;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+@keyframes hide {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.1;
+    }
+}

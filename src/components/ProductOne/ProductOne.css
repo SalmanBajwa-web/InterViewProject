@@ -1,0 +1,25 @@
+.productOne{
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
+    padding: 5px;
+    border-radius: 10px;
+    width:200px;
+    overflow: hidden; 
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.productOne img{
+    width:100%;
+}
+.productOne h6{
+    margin:0px;
+}
+
+
+
+@media (max-width:700px) {
+    .productOne{
+        width:150px;
+    }
+}

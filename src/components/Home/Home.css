@@ -1,0 +1,253 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.home .wheel {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: rgb(49, 5, 49);
+    box-shadow: 0px 0px 0px 20px rgb(250, 206, 250);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .wheel .iconBox {
+    position: absolute;
+    /* top:0px;
+    left:0px; */
+    cursor: pointer;
+}
+
+.home .wheel .iconBox:hover svg {
+    fill: #fff;
+}
+
+.home .wheel .iconBox.activeIconBox svg {
+    fill: #fff;
+    box-shadow: 0px 0px 0px 1px rgb(250, 206, 250);
+    border-radius: 50%;
+}
+
+.home .wheel .iconBox svg {
+    position: absolute;
+    /* top:0px;
+    left:0px; */
+    width: 40px;
+    height: 40px;
+}
+
+/* iconBox icons */
+
+.home .wheel .iconBox:nth-child(1) {
+    position: absolute;
+    top: 5%;
+    left: 45%;
+}
+
+.home .wheel .iconBox:nth-child(2) {
+    position: absolute;
+    bottom: 10%;
+    left: 45%;
+}
+
+.home .wheel .iconBox:nth-child(3) {
+    position: absolute;
+    top: 45%;
+    left: 2%;
+}
+
+.home .wheel .iconBox:nth-child(4) {
+    position: absolute;
+    top: 45%;
+    right: 12%;
+}
+
+.home .wheel .iconBox:nth-child(5) {
+    position: absolute;
+    top: 20%;
+    right: 20%;
+}
+
+.home .wheel .iconBox:nth-child(6) {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.home .wheel .iconBox:nth-child(7) {
+    position: absolute;
+    bottom: 25%;
+    right: 25%;
+}
+
+.home .wheel .iconBox:nth-child(8) {
+    position: absolute;
+    bottom: 25%;
+    left: 15%;
+}
+
+/* rotateOuterBox */
+.home .wheel .rotateOuterBox {
+    width: 65%;
+    height: 65%;
+    box-shadow: 0px 0px 10px 20px rgb(29, 27, 29);
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .wheel .rotateOuterBox .rotateBox {
+    width: 80%;
+    height: 80%;
+    box-shadow: 0px 0px 5px 5px rgb(233, 233, 233);
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    transition: all 0.3s linear;
+}
+
+.home .wheel .rotateOuterBox .rotateBox::after {
+    content: '';
+    width: 5px;
+    height: 50%;
+    background: red;
+
+}
+
+.home .wheel .rotateOuterBox  .iconBox {
+    width: 30%;
+    height: 30%;
+    background: linear-gradient(180deg,#eee,#fff);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+.home .wheel .rotateOuterBox  .iconBox span:nth-child(1){
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.home .wheel .rotateOuterBox  .iconBox span:nth-child(2){
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color:#000;
+}
+.home .wheel .rotateOuterBox  .iconBox svg{
+    width:40px;
+    height: 40px;
+    box-shadow: none;
+    overflow: visible;
+    fill: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ################# Mobile ############################## */
+
+
+
+
+
+@media (min-width:1400px) {
+    .home .wheel {
+        width: 700px;
+        height: 700px;
+    }
+
+    .home .wheel .iconBox svg {
+        width: 60px;
+        height: 60px;
+    }
+
+    .home .wheel .rotateOuterBox  .iconBox span:nth-child(1) svg{
+        width: 80px;
+        height: 80px;
+    }
+    .home .wheel .rotateOuterBox  .iconBox span:nth-child(2){
+   
+        font-size: 40px;
+
+    }
+}
+
+@media (max-width:800px) {
+    .home .wheel {
+        width: 400px;
+        height: 400px;
+    }
+
+    .home .wheel .iconBox svg {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width:640px) {
+    .home .wheel {
+        width: 300px;
+        height: 300px;
+    }
+
+    .home .wheel .iconBox svg {
+        width: 20px;
+        height: 20px;
+    }
+    .home .wheel .rotateOuterBox  .iconBox span:nth-child(1) svg{
+        width: 30px;
+        height: 30px;
+    }
+    .home .wheel .rotateOuterBox  .iconBox span:nth-child(2){
+   
+        font-size: 17px;
+
+    }
+}
